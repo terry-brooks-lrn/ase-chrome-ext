@@ -1,0 +1,16 @@
+{
+"manifest_version": 2,
+"name": "Learnosity API Support - Add Ticket to Agenda",
+"version": "1.0",
+"description":  "Intenral tool for the Learnosity API Support team to add a ZenDesk or JIRAS ticket to the standup agenda", 
+"icons": {
+    "128": "assets/128.png",
+    "48": "assets/48.png",
+    "16": "assets/16.png"
+}, 
+"page_action": {
+    "default_icon": "assets/icon16.png",
+    "default_popup": "popup.html",
+    "default_title": "LearnosityAddTicket"
+}
+}

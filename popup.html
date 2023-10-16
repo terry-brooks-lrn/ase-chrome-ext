@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Learnosity ASE - Add Ticket to Agenda</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/58e27c88da.js" crossorigin="anonymous"></script> <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet" />
+    <link href="https://learnositXy.b-cdn.net/bootstrap.min.css" rel="stylesheet" />
+    <script>
+        function showAddiitionDetails(){
+            var moreDetails = document.getElementById("details")
+            var primaryButton = document.getElementById("primary-add-button")
+
+            primaryButton.style.display = "none";
+            moreDetails.style.display = "block";
+        }
+        function hideAdsiitionDetails(){
+            var moreDetails = document.getElementById("details")
+            var primaryButton = document.getElementById("primary-add-button")q
+            primaryButton.style.display = "block";
+            moreDetails.style.display = "none";
+        }
+
+    </script>  
+</head>
+  <body>
+    <button id="primary-add-button" class="btn btn-info" onclick="showAddiitionDetails()">Add Ticket to Agenda</button>
+    <div clas="details" hidden>
+        <form method="post" action="http" >
+            <label for="section">What Section will this ticket be discussed?:</label>
+            <select name="section" id="section">
+                <option value="REVIEW">Ticket Review</option>
+                <option value="FYI">Ticket Monitoring</option>
+                <option value="CALLS">Client Calls</option>
+                <option value="FOCUS">Client's Needing Attention</option>
+                <option value="NEEDS">Team, Departmental, Organizaional Needs</option>
+                <option value="MISC">Client's Needing Attention</option>
+                <option value="FOCUS">Miscellaneous</option>
+                <option value="DOCS">Documentation Review and Enhancement</option>
+                <option value="IFEAT">Internal Feature Request</option>
+              </select> 
+              <div class="buttons">
+                <input type="submit" value="Submit">
+
+              </div>
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
