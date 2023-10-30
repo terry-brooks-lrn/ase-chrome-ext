@@ -1,16 +1,20 @@
 {
-"manifest_version": 2,
-"name": "Learnosity API Support - Add Ticket to Agenda",
-"version": "1.0",
-"description":  "Intenral tool for the Learnosity API Support team to add a ZenDesk or JIRAS ticket to the standup agenda", 
-"icons": {
-    "128": "assets/128.png",
-    "48": "assets/48.png",
-    "16": "assets/16.png"
-}, 
-"page_action": {
+  "manifest_version": 3,
+  "name": "Learnosity API Support - Add Ticket to Agenda",
+  "version": "1.0",
+  "description": "Intenral tool for the Learnosity API Support team to add a ZenDesk or JIRAS ticket to the standup agenda",
+  "icons": {
+    "128": "assets/icon128.png",
+    "48": "assets/icon48.png",
+    "16": "assets/icon16.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "default-src *; script-src *; script-src-elem *; script-src-attr *; style-src *; style-src-elem *; style-src-attr *; img-src *; font-src *; connect-src *; media-src *; object-src *; prefetch-src *; child-src *; frame-src *; worker-src *; frame-ancestors *; form-action *; sandbox allow-forms allow-same-origin allow-scripts allow-top-navigation allow-popups allow-pointer-lock; base-uri *; manifest-src *"
+  },
+  "action": {
     "default_icon": "assets/icon16.png",
     "default_popup": "popup.html",
     "default_title": "LearnosityAddTicket"
+  }
 }
-}
+1
